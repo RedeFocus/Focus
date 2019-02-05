@@ -131,4 +131,4 @@ client.on("message", async message => { //abertura do evento message
               setImg();
               setInterval(() => setImg(), 100000000); //30000 = 30s
             });               
-client.login(config.token); //bot pega o token na config e faz o login.
+client.login(process.env.BOT_TOKEN); //bot pega o token na config e faz o login.
